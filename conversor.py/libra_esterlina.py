@@ -6,4 +6,3 @@ dolares = round(dolares, 2)
 dolares = str(dolares)
 print ("Tienes" + " " + "$" + dolares + " " + "dolares")  
 
-hola = ("VOY A HACER EL MEJOR PROGRAMADOR DEL FUCKING WORLD")
