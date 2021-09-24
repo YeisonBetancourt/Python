@@ -6,3 +6,11 @@ pesos = round(pesos, 2)
 pesos = str(pesos)
 print ("Tienes" + " " + "$" + pesos + " " + "pesos Colombianos")
 
+
+nombre1 = ("Yeison")
+nombre2 = ("Feranando")
+apellido1 = ("Gordillo")
+apellido2 = ("Betancourt")
+
+nombre_final = nombre1 + " " + nombre2 + " " + apellido1 + " " + apellido2
+nombre_final = inpu(nombre_final)
