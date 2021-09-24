@@ -13,4 +13,4 @@ apellido1 = ("Gordillo")
 apellido2 = ("Betancourt")
 
 nombre_final = nombre1 + " " + nombre2 + " " + apellido1 + " " + apellido2
-nombre_final = inpu(nombre_final)
+print (nombre_final)
