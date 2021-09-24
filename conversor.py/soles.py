@@ -6,4 +6,9 @@ euros = round(euros, 2)
 euros = str(euros)
 print ("Tienes " + "$" + euros + " " + "euros")
 
+
+
 hola = ("VOY A HACER EL MEJOR PROGRAMADOR DEL FUCKING WORLD")
+numero1 = 3
+numero2 = 4
+numero3 = numero1 = numero2
