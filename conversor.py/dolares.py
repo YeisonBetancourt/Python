@@ -1,16 +1,41 @@
-dolares = input("Cuantos dolares Americanos tienes: ")
-dolares = float(dolares)
-valor_pesos = 3.834
-pesos = dolares * valor_pesos
-pesos = round(pesos, 2)
-pesos = str(pesos)
-print ("Tienes" + " " + "$" + pesos + " " + "pesos Colombianos")
+elige = """ Bienvenido al conversor de monedas 😀
 
+1 - Pesos Colombianos
+2 - Pesos Argentinos
+3 - Soles Peruanos
+4 - Libras Estarlinas
 
-nombre1 = ("Yeison")
-nombre2 = ("Feranando")
-apellido1 = ("Gordillo")
-apellido2 = ("Betancourt")
+Por favor, elige una opcion: """
 
-nombre_final = nombre1 + " " + nombre2 + " " + apellido1 + " " + apellido2
-print (nombre_final)
+opcion = int(input(elige))
+
+if  opcion == 1:
+    pesos = float(input("¿Cuantos pesos Colombianos tienes?: "))
+    valor_dolar = 3.834 
+    dolares = pesos / valor_dolar 
+    dolares = str(round(dolares, 1))
+    print ("Tienes $" + dolares + " dolares Americanos")  
+
+elif opcion == 2:
+    pesos = float(input("¿Cuantos pesos Argentinos tienes?: "))
+    valor_dolar = 0.010 
+    dolares = pesos * valor_dolar 
+    dolares = str(round(dolares, 1))
+    print ("Tienes $" + dolares + " dolares Americanos")  
+
+elif opcion == 3:
+    pesos = float(input("¿Cuantos soles Peruanos tienes?: "))
+    valor_dolar = 0.24 
+    dolares = pesos * valor_dolar 
+    dolares = str(round(dolares, 1))
+    print ("Tienes $" + dolares + " dolares Americanos")  
+
+elif opcion == 4:
+    pesos = float(input("¿Cuantos libras estarlinas tienes?: "))
+    valor_dolar = 1.37 
+    dolares = pesos * valor_dolar 
+    dolares = str(round(dolares, 1))
+    print ("Tienes $" + dolares + " dolares Americanos") 
+
+else:
+    print ("Puto, pon un valor correcto")
