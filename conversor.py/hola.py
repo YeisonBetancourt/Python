@@ -1,8 +1,8 @@
 hola = """
-Hola, muy beunso dias a todos y a todas, hoy estoy super feliz, mas feliz que nunca por que desde hoy, me enfoco nuevamente en mis objetivos, en aprender ingles y programacion, ademas de lograr los abs de un dios griego...
+Hola que hace...
 
 
-    
+
 Estas realamente comprometido? si o no? 
 """
 
