@@ -1,3 +1,42 @@
+def proceso(ejercicio, r1, r2, r3, r4, vt):
+    print ("Haz seleccionado el " + ejercicio)
+    r1 = r1 
+    r2 = r2
+    r3 = r3
+    r4 = r4
+    rt = (r1 + r2 + r3 + r4)
+    vt = vt
+    it = (vt / rt)
+    vr1 = (r1 * it)
+    vr2 = (r2 * it)
+    vr3 = (r3 * it)
+    vr4 = (r4 * it)
+    vt = (vr1 + vr2 + vr3 + vr4)
+    vt = str(vt)
+    print ("Este es el resultado final" + " = " + vt)
+
+
+
+
+# def pantalla():
+#     print("""Este es el proceso
+#     r1 = 690 
+#     r2 = 23
+#     r3 = 67
+#     r4 = 10
+#     rt = (r1 + r2 + r3 + r4)
+#     vt = 40
+#     it = (vt / rt)
+#     vr1 = (r1 * it)
+#     vr2 = (r2 * it)
+#     vr3 = (r3 * it)
+#     vr4 = (r4 * it)
+#     vt = (vr1 + vr2 + vr3 + vr4)
+#     vt = str(vt) """)
+
+        
+
+        
 taller_electricidad = """Hola profe soy Yeison Fernando Gordillo Betancourt del grado 902, dado que dijiste que podiamoas realizar los ejercicios con cualquier herramienta, pues bueno, lo hice en codigo 😅  
 
 1- Ver el primer ejercicio
@@ -7,52 +46,39 @@ taller_electricidad = """Hola profe soy Yeison Fernando Gordillo Betancourt del 
 
 
 Elige una opcion (1, 2, 3 ,4) """
+
 ejercicios = int(input(taller_electricidad))
 if ejercicios == 1:
-    print ("Haz seleccionado el primer ejercicio")
-    r1 = 690 
-    r2 = 500
-    r3 = 81
-    r4 = 601
-    rt = (r1 + r2 + r3 + r4)
-    vt = 10
-    it = (vt / rt)
-    vr1 = (r1 * it)
-    vr2 = (r2 * it)
-    vr3 = (r3 * it)
-    vr4 = (r4 * it)
-    vt = (vr1 + vr2 + vr3 + vr4)
-    vt = str(vt)
-    print ("Este es el resultado final" + " = " + vt)
-    ver= """ Quieres ver el proceso?
+    ver= """¿Que quieres ver?
 
-    1- Si
-    2- No
+    1- Resultado
+    2- Proceso
+    3- Ambas
 
     Elige una opcion (1, 2) """
     ver_proceso = int(input(ver))
     if ver_proceso == 1:
-        print ("Haz elegido ver el proceso")
-        mostrar_proceso = """
-        r1 = 690 
-        r2 = 500
-        r3 = 81
-        r4 = 601
-        rt = (r1 + r2 + r3 + r4)
-        vt = 10
-        it = (vt / rt)
-        vr1 = (r1 * it)
-        vr2 = (r2 * it)
-        vr3 = (r3 * it)
-        vr4 = (r4 * it)
-        vt = (vr1 + vr2 + vr3 + vr4)"""
-        print (mostrar_proceso)
+        print ("Haz elegido ver el resultado")
+    proceso("primer ejercicio", 690, 23, 67, 10, 40)
+ 
 
 
 
-
-
-
+# print ("Haz elegido ver el proceso")
+#         mostrar_proceso = """
+#         r1 = 690 
+#         r2 = 500
+#         r3 = 81
+#         r4 = 601
+#         rt = (r1 + r2 + r3 + r4)
+#         vt = 10
+#         it = (vt / rt)
+#         vr1 = (r1 * it)
+#         vr2 = (r2 * it)
+#         vr3 = (r3 * it)
+#         vr4 = (r4 * it)
+#         vt = (vr1 + vr2 + vr3 + vr4)"""
+#         print (mostrar_proceso)
 
 
 

@@ -1,12 +1,16 @@
 def divisas(tipo_pesos, valor_dolar, tienes):
-        pesos = float(input("¿Cuantos " + tipo_pesos + " tienes?: "))
-        dolares = pesos * valor_dolar 
-        dolares = str(round(dolares, 4))
-        print ("Tienes $" + dolares + " " + tienes) 
-def elegido(moneda):
+    pesos = float(input("¿Cuantos " + tipo_pesos + " tienes?: "))
+    dolares = pesos * valor_dolar 
+    dolares = str(round(dolares, 4))
+    print ("Tienes $" + dolares + " " + tienes) 
+def elegido(moneda, de_pesos, a_pesos1, a_pesos2, a_pesos3, a_pesos4):
     print("Haz seleccionado " + moneda) 
     print("Asi que ahora elige, con que pais quieres cambiar tu moneda? 🤔")
-
+    print ("1- De " + de_pesos + " a " + a_pesos1)
+    print ("2- De " + de_pesos + " a " + a_pesos2) 
+    print ("3- De " + de_pesos + " a " + a_pesos3)                         
+    print ("4- De " + de_pesos + " a " + a_pesos4)
+                  
 menu = """Hola bienvenido a este grandioso conversor de monedas 🤑💱
 
 ¿Que moneda quieres cambiar? 🤔 
@@ -15,107 +19,74 @@ menu = """Hola bienvenido a este grandioso conversor de monedas 🤑💱
 2- Peso Argentino 
 3- Peso Mexicano
 4- Dolar Americano  
-5- Libra estarlina 
+5- Libra Estarlina 
  
 Elige una opcion (1, 2, 3, 4, 5) """
 
 menu_seleccionar = int(input(menu))
 if menu_seleccionar == 1:
-    elegido("pesos Colombianos")
-    colombia = """1- De pesos Colombianos a pesos Argentinos
-    2- De pesos Colombianos a pesos Mexicanos 
-    3- De pesos Colombianos a Dolares Americanos
-    4- De pesos Colombinos a Libras Estarlinas
-    
-    Elige una opcion (1, 2, 3, ,4) """ 
-    colombia_a = int(input(colombia))
-    if colombia_a == 1:
-        divisas("pesos Colmbianos", 0.024, "pesos Argentinos")
-    elif colombia_a == 2:
-        divisas("pesos Colombianos", 0.0053, "pesos Mexicanos")
-    elif colombia_a == 3:
+    elegido("Pesos Colombianos", "Pesos Colombianos", "Pesos Argentinos", "pesos Mexicanos", "Dolares Americanos", "Libras Estarlinas")
+    opcion_co = int(input("Elige una opcion (1, 2, 3, 4)"))  
+    if opcion_co == 1:
+        divisas("pesos Colombianos", 0.024, "Pesos Argentinos")
+    elif opcion_co == 2:
+        divisas("pesos Colombianos", 0.0053, "Pesos Mexicanos")
+    elif opcion_co == 3:
         divisas("pesos Colombianos", 0.00026, "Dolares Americanos")
-    elif colombia_a == 4:
-        divisas("pesos Colombianos", 0.00019, "Libras estarlinas")
+    elif opcion_co == 4:
+        divisas("pesos Colombianos", 0.00019, "Libras Estarlinas")
     else:
         print ("Por favor, elige una opcion correcta💚")
-
 elif menu_seleccionar == 2:
-    elegido("pesos Argentinos")
-    argentina = """1- De pesos Argentinos a pesos Colombianos
-    2- De pesos Argentinos a pesos Mexicanos 
-    3- De pesos Argentinos a Dolares Americanos
-    4- De pesos Argentinos a Libras Estarlinas
-
-    Elige una opcion (1, 2, 3, 4) """
-
-    argentina_d = int(input(argentina))
-    if argentina_d == 1:
-        divisas("pesos Argentinos", 38.89, "pesos Colombianos")
-    elif argentina_d == 2:  
-        divisas("pesos Argentinos", 0.21, "pesos Mexicanos")
-    elif argentina_d == 3:
+    elegido("Pesos Argentinos", "Pesos Argentinos", "Pesos Colombianos", "Pesos Mexicanos", "Dolares Americanos", "Libras Estarlinas")
+    opcion_ar = int(input("Elige una opcion (1, 2, 3, 4)"))  
+    if opcion_ar == 1:
+        divisas("pesos Argentinos", 38.89, "Pesos Colombianos")
+    elif opcion_ar == 2:  
+        divisas("pesos Argentinos", 0.21, "Pesos Mexicanos")
+    elif opcion_ar == 3:
         divisas("pesos Argentinos", 0.010, "Dolares Americanos")
-    elif argentina_d == 4:
+    elif opcion_ar == 4:
         divisas("pesos Argentinos", 0.00076, "Libras Estarlinas")
     else:
         print ("Por favor, elige una opcion correcta💚")
 elif menu_seleccionar == 3:
-    elegido("pesos Mexicanos")
-    mexico = """1- De pesos Mexicanos a pesos Colombianos
-    2- De pesos Mexicanos a pesos Argentinos
-    3- De pesos Mexicanos a Dolares Americanos
-    4- De pesos Mexicanos a Libras Estarlinas
-    
-    Elige una opcion (1, 2, 3, 4) """
-    mexico_d = int(input(mexico))
-    if mexico_d == 1:
-        divisas("pesos Mexicanos", 186.98, "pesos Colombianos")
-    elif mexico_d == 2:  
-        divisas("pesos Mexicanos", 4.81, "pesos Argentinos")
-    elif mexico_d == 3:
+    elegido("Pesos Mexicanos", "Pesos Mexicanos", "Pesos Colombianos", "Pesos Argentinos", "Dolares Americanos", "Libras Estarlinas") 
+    opcion_mx = int(input("Elige una opcion (1, 2, 3, 4)"))  
+    if opcion_mx == 1:
+        divisas("pesos Mexicanos", 186.98, "Pesos Colombianos")
+    elif opcion_mx == 2:  
+        divisas("pesos Mexicanos", 4.81, "Pesos Argentinos")
+    elif opcion_mx == 3:
         divisas("pesos Mexicanos", 0.049, "Dolares Americanos")
-    elif mexico_d == 4:
-        divisas("pesos mexicanos", 0.0036, "Libras Estarlinas")
+    elif opcion_mx == 4:
+        divisas("pesos Mexicanos", 0.0036, "Libras Estarlinas")
     else:
         print ("Por favor, elige una opcion correcta💚")
 elif menu_seleccionar == 4:
-    elegido("Dolares Americanos")
-    america = """1- De Dolares Americanos a pesos Colombianos
-    2- De Dolares Americanos a pesos Argentinos
-    3- De Dolares Americanos a pesos Mexicanos
-    4- De Dolares Mexicanos a Libras Estarlinas
-    
-    Elige una opcion (1, 2, 3, 4) """
-    america_d = int(input(america))
-    if america_d == 1:
-        divisas("Dolares Americanos", 3836, "pesos Colombianos")
-    elif america_d == 2:  
-        divisas("Dolares Americanos", 98.61, "pesos Argentinos")
-    elif america_d == 3:
-        divisas("Dolares Americanos", 20.52, "pesos Mexicanos")
-    elif america_d == 4:
+    elegido("Dolares Americanos", "Dolares Americanos", "Pesos Colombianos", "Pesos Argentinos", "Pesos Mexicanos", "Libras Estarlinas")
+    opcion_eu = int(input("Elige una opcion (1, 2, 3, 4)"))
+    if opcion_eu == 1:
+        divisas("Dolares Americanos", 3836, "Pesos Colombianos")
+    elif opcion_eu == 2:  
+        divisas("Dolares Americanos", 98.61, "Pesos Argentinos")
+    elif opcion_eu == 3:
+        divisas("Dolares Americanos", 20.52, "Pesos Mexicanos")
+    elif opcion_eu == 4:
         divisas("Dolares Americanos", 0.074, "Libras Estarlinas")
     else:
         print ("Por favor, elige una opcion correcta💚")
 elif menu_seleccionar == 5:
-    elegido("Libras Esyarlinas")
-    reino_unido = """
-    1- De Libras Estarlinas a pesos Colombianos
-    2- De Libras Estarlinas a pesos Argentinos
-    3- De Libras Estarlinas a Dolares Americanos
-    4- De Libras Estarlinas a pesos Mexicanos
-    
-    Elige una opcion (1, 2, 3, 4) """
-    reino_unido_d = int(input(reino_unido))
-    if reino_unido_d == 1:
-         divisas("Libras Estarlinas", 3836, "pesos Colombianos")
-    elif reino_unido_d == 2:  
-        divisas("Libras Estarlinas", 98.61, "pesos Argentinos")
-    elif reino_unido_d == 3:    
+    elegido("Libras Estarlinas", "Libras Estralinas", "Pesos Colombianos", "Pesos Argentinos", "Dolares Americanos", "Pesos Mexicanos")
+    opcion_ru = int(input("Elige una opcion (1, 2, 3, 4)"))
+    if opcion_ru == 1:
+         divisas("Libras Estarlinas", 3836, "Pesos Colombianos")
+    elif opcion_ru == 2:  
+        divisas("Libras Estarlinas", 98.61, "Pesos Argentinos")
+    elif opcion_ru == 3:    
         divisas("Libras Estarlinas", 20.52, "Dolares")
-    elif reino_unido_d == 4:
-        divisas("Libras Estarlinas", 0.074, "pesos Mexicanos")
+    elif opcion_ru == 4:
+        divisas("Libras Estarlinas", 0.074, "Pesos Mexicanos")
     else:
         print ("Por favor, elige una opcion correcta💚")
 else: 
@@ -143,7 +114,12 @@ else:
 
 
 
-
+# elegido("pesos Colombianos")
+#     print ("1- De pesos Colombianos a pesos Argentinos")
+#     print ("2- De pesos Colombianos a pesos Mexicanos") 
+#     print ("3- De pesos Colombianos a Dolares Americanos")
+#     print ("4- De pesos Colombinos a Libras Estarlinas")
+#     opcion = int(input("""(Elige una opcion 1, 2, 3, 4)"""))  
 
 
 
