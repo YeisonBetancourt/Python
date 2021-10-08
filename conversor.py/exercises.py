@@ -100,15 +100,15 @@
 
 
 
-def run8():
-    print("HUCHA")
-    objetivo = float("Cuantos pesos Colombianos desea ahorrar? What is your objective? ")
-    ahorrar2 = float("Cuantos pesos Colombianos desea ahorrar? ")
-    ahorrar3 = float("Cuantos pesos Colombianos desea ahorrar? ")
-    while 
+# def run8():
+#     print("HUCHA")
+#     objetivo = float("Cuantos pesos Colombianos desea ahorrar? What is your objective? ")
+#     ahorrar2 = float("Cuantos pesos Colombianos desea ahorrar? ")
+#     ahorrar3 = float("Cuantos pesos Colombianos desea ahorrar? ")
+#     while 
 
-if __name__ == '__main__':
-    run8()
+# if __name__ == '__main__':
+#     run8()
 
 
 
