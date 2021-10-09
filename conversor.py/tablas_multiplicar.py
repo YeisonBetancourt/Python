@@ -12,6 +12,7 @@ def operacion (operador, number):
     for contador in range (1, 11):
         print (str(contador) + "- " + "tabla del " + str(contador))
     elige_tabla = int(input("Elige una tabla de " + operador + ": "))
+        
     if elige_tabla == number:
         return True
     else:
@@ -29,16 +30,22 @@ def run():
     ¿Que tabla necesitas usar? (EJEMPlO: Tabla de adicion) """)
     es_tabla = nombre_tabla(welcome, "tabladeadicion")
     if es_tabla == True:
+
         es_operacion = operacion("adicion", 1)
         if es_operacion == True:
             for contador in range (1, 11):
                 print(contador)
+    
+
+
+
+
 
     es_tabla = nombre_tabla(welcome, "tabladesustraccion")
     if es_tabla == True:
         es_operacion = operacion("sustraccion", 2)
         if es_operacion == True:
-            for contador in range (1, 11):
+            for contador in range (2, 11):
                 print(contador)
         
 
