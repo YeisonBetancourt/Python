@@ -36,7 +36,7 @@ def run():
 
     es_tabla = nombre_tabla(welcome, "tabladesustraccion")
     if es_tabla == True:
-        es_operacion = operacion("sustraccion", 1)
+        es_operacion = operacion("sustraccion", 2)
         if es_operacion == True:
             for contador in range (1, 11):
                 print(contador)
