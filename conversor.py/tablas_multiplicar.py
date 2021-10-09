@@ -7,16 +7,16 @@ def nombre_tabla(welcome, tablita):
         return False
         
 
-def operacion (operador, number):
+def operacion (operador):
     print("Sobre que tabla de " + operador + " quieres actuar🤔:  ")
     for contador in range (1, 11):
         print (str(contador) + "- " + "tabla del " + str(contador))
-    elige_tabla = int(input("Elige una tabla de " + operador + ": "))
-        
-    if elige_tabla == number:
-        return True
-    else:
-        return False
+    input ("Elige una tabla de " + operador + ": ")
+
+
+def resolviendo (numero):
+    for contador in range (numero, 11):
+        print(contador)
 
 
 def run():
@@ -30,19 +30,33 @@ def run():
     ¿Que tabla necesitas usar? (EJEMPlO: Tabla de adicion) """)
     es_tabla = nombre_tabla(welcome, "tabladeadicion")
     if es_tabla == True:
-
-        es_operacion = operacion("adicion", 1)
-        if es_operacion == True:
-            for contador in range (1, 11):
-                print(contador)
-    
-
-
-
-
-
+        operacion("adicion")
+        if 1:
+            resolviendo(1)
+        elif 2:
+            resolviendo(2)
+        elif 3:
+            resolviendo(3)      
+        elif 4:
+            resolviendo(4)
+        elif 5:
+            resolviendo(5)
+        elif 6:
+            resolviendo(6)
+        elif 7:
+            resolviendo(7)
+        elif 8:
+            resolviendo(8)
+        elif 9:
+            resolviendo(9)
+        elif 10:
+            resolviendo(10)
+        
     es_tabla = nombre_tabla(welcome, "tabladesustraccion")
     if es_tabla == True:
+
+
+
         es_operacion = operacion("sustraccion", 2)
         if es_operacion == True:
             for contador in range (2, 11):
@@ -58,8 +72,7 @@ def run():
     if es_tabla == True:
         operacion("sustraccion")
         pass
-
-    else:
-        print("Elige una opcion correcta, por favor 💚")
+  
 if __name__ == '__main__':
     run()
+    
