@@ -6,17 +6,35 @@ def nombre_tabla(welcome, tablita):
     else:
         return False
         
+def resolviendo (numero, rango):
+    for contador in range (numero, rango):
+        print(contador*1)
 
 def operacion (operador):
     print("Sobre que tabla de " + operador + " quieres actuar🤔:  ")
-    for contador in range (1, 11):
+    for contador in range (1, 10):
         print (str(contador) + "- " + "tabla del " + str(contador))
     numero_elegido = int(input("Elige una tabla de " + operador + ": "))
-    
-
-def resolviendo (numero):
-    for contador in range (numero, 11):
-        print(contador)
+    if numero_elegido == 1:
+        resolviendo(0, 10)
+    elif numero_elegido == 2:
+        resolviendo(1, 11)
+    elif numero_elegido == 3:
+        resolviendo(2, 12)    
+    elif numero_elegido == 4:
+        resolviendo(3, 13)
+    elif numero_elegido == 5:
+        resolviendo(4, 14)
+    elif numero_elegido == 6:
+        resolviendo(5, 15)
+    elif numero_elegido == 7:
+        resolviendo(6, 16)
+    elif numero_elegido == 8:
+        resolviendo(7, 17)
+    elif numero_elegido == 9:
+        resolviendo(8, 18)
+    else:
+        print("Elija una opcion correcta 💚")                  
 
 
 def run():
@@ -31,48 +49,18 @@ def run():
     es_tabla = nombre_tabla(welcome, "tabladeadicion")
     if es_tabla == True:
         operacion("adicion")
-        if 1:
-            resolviendo(1)
-        elif 2:
-            resolviendo(2)
-        elif 3:
-            resolviendo(3)      
-        elif 4:
-            resolviendo(4)
-        elif 5:
-            resolviendo(5)
-        elif 6:
-            resolviendo(6)
-        elif 7:
-            resolviendo(7)
-        elif 8:
-            resolviendo(8)
-        elif 9:
-            resolviendo(9)
-        elif 10:
-            resolviendo(10)
-        
+
     es_tabla = nombre_tabla(welcome, "tabladesustraccion")
     if es_tabla == True:
-
-
-
-        es_operacion = operacion("sustraccion", 2)
-        if es_operacion == True:
-            for contador in range (2, 11):
-                print(contador)
-        
+        operacion("sustraccion")
 
     es_tabla = nombre_tabla(welcome, "tablademultiplicacion")
     if es_tabla == True:
-        operacion("sustraccion")
-        pass
+        operacion("multiplicacion")
 
     es_tabla = nombre_tabla(welcome, "tabladedivision")
     if es_tabla == True:
-        operacion("sustraccion")
-        pass
-  
+        operacion("division")
+    
 if __name__ == '__main__':
     run()
-    
