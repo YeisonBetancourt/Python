@@ -98,12 +98,16 @@
 #     run()
 
 
-def resolviendo (numero):
-        for contador in range (numero , 10):
-            print(contador-1)
+# def resolviendo (numero):
+#         for contador in range (numero , 10):
+#             print(contador-1)
 
 
 def run ():
-    resolviendo(1)
+    for tabla in range(0,13,1):
+        print('Tabla del',tabla)
+        for num in range(13):
+            print(tabla,'x',num,'=',tabla*num)
+
 if __name__ == '__main__':
     run()

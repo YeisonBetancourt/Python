@@ -7,19 +7,33 @@ def nombre_tabla(welcome, tablita):
         return False
         
 
-def resolviendo (numero, rango):
-    for contador in range (numero, rango):
-        print(contador)
+def suma (numero):
+    for i in range (1, 10):
+        print(i+ numero)
+
+
+def resta (numero, rango):
+    for i in range (numero, rango):
+        print(i- 1)
+
+
+def multiplicacion (numero):
+    for i in range (1, 11):
+        print(i* numero)
+
+
+def division (numero):
+    for i in range (1, 11):
+        print(i/ numero)
 
 
 def operacion (operador):
     print("Sobre que tabla de " + operador + " quieres actuar🤔:  ")
-    for contador in range (1, 10):
-        print (str(contador) + "- " + "tabla del " + str(contador))
+    for i in range (1, 10):
+        print (str(i) + "- " + "tabla del " + str(i))
     numero_elegido = int(input("Elige una tabla de " + operador + ": "))
     return numero_elegido
-
-
+   
 
 def run():
     welcome = input("""Hola👋, bienvenido a este increible programa donde podras saber:
@@ -34,78 +48,76 @@ def run():
     if es_tabla == True:
         es_numero = operacion("adicion")
         if es_numero == 1:
-            resolviendo(2, 11)
+            suma(1)  
         elif es_numero == 2:
-            resolviendo(3,12)
+            suma(2)
         elif es_numero == 3:
-            resolviendo(4,13)
+            suma(3)
         elif es_numero == 4:
-            resolviendo(5,14)
+            suma(4)
         elif es_numero == 5:
-            resolviendo(6,15)
+            suma(5)
         elif es_numero == 6:
-            resolviendo(7,16)
+            suma(6)
         elif es_numero == 7:
-            resolviendo(8,17)
+            suma(7)
         elif es_numero == 8:
-            resolviendo(9,18)
+            suma(8)
         elif es_numero == 9:
-            resolviendo(10,19)                 
-        else:
-            print("Elija una opcion correcta 💚")
-
-
+            suma(9)
+            
+            
     es_tabla = nombre_tabla(welcome, "tabladesustraccion")
     if es_tabla == True:
-        es_numero = operacion("sustraccion")
-        if es_numero == 1:
-            resolviendo(1, 10)
-        elif es_numero == 2:
-            resolviendo(1,10)
-        elif es_numero == 3:
-            resolviendo(1,10)
-        elif es_numero == 4:
-            resolviendo(1,10)
-        elif es_numero == 5:
-            resolviendo(1,10)
-        elif es_numero == 6:
-            resolviendo(1,10)
-        elif es_numero == 7:
-            resolviendo(1,10)
-        elif es_numero == 8:
-            resolviendo(1,10)
-        elif es_numero == 9:
-            resolviendo(1,10)                 
-        else:
-            print("Elija una opcion correcta 💚")
+        es_numero2 = operacion("sustraccion")
+        if es_numero2:
+            resta(1,10)
 
+        
     es_tabla = nombre_tabla(welcome, "tablademultiplicacion")
     if es_tabla == True:
         es_numero = operacion("multiplicacion")
         if es_numero == 1:
-            resolviendo(0, 10, *1)
+            multiplicacion(1)
         elif es_numero == 2:
-            resolviendo(1,11, *1)
+            multiplicacion(2)
         elif es_numero == 3:
-            resolviendo(2,12, *1)
+            multiplicacion(3)
         elif es_numero == 4:
-            resolviendo(3,13, *1)
+            multiplicacion(4)
         elif es_numero == 5:
-            resolviendo(4,14, *1)
+            multiplicacion(5)
         elif es_numero == 6:
-            resolviendo(5,15, *1)
+            multiplicacion(6)
         elif es_numero == 7:
-            resolviendo(6,16, *1)
+            multiplicacion(7)
         elif es_numero == 8:
-            resolviendo(7,17, *1)
+            multiplicacion(8)
         elif es_numero == 9:
-            resolviendo(8,18, *1)                 
-        else:
-            print("Elija una opcion correcta 💚")
+            multiplicacion(9)
 
     es_tabla = nombre_tabla(welcome, "tabladedivision")
     if es_tabla == True:
-        operacion("division")
-    
+        es_numero = operacion("division")
+        if es_numero == 1:
+            division(1)
+        elif es_numero == 2:
+            division(2)
+        elif es_numero == 3:
+            division(3)
+        elif es_numero == 4:
+            division(4)
+        elif es_numero == 5:
+            division(5)
+        elif es_numero == 6:
+            division(6)
+        elif es_numero == 7:
+            division(7)
+        elif es_numero == 8:
+            division(8)
+        elif es_numero == 9:
+            division(9)
+
+
 if __name__ == '__main__':
     run()
