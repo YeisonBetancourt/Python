@@ -34,15 +34,15 @@
 #     run3()
 
 
-# def run4():
-#     print("DIGA no PARA TERMINAR")
-#     say = input("Desea continuar con el programa? ")
-#     while say != "no":
-#         say = input("Desea continuar con el programa? ")
-#     if say == "no":
-#         print("Hasta la vista y que por aqui no vuelvas hijueputa 👋😅")
-# if __name__ == '__main__':
-#     run4()
+def run4():
+    print("DIGA no PARA TERMINAR")
+    say = input("Desea continuar con el programa? ")
+    while say != "no":
+        say = input("Desea continuar con el programa? ")
+    if say == "no":
+        print("Hasta la vista y que por aqui no vuelvas hijueputa 👋😅")
+if __name__ == '__main__':
+    run4()
 
 
 # def run5():

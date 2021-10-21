@@ -1,30 +1,34 @@
-def nombre_tabla(welcome, tablita):
-    welcome = welcome.lower()
-    welcome = welcome.replace(" ", "")
-    if welcome == tablita:
+def nombre_tabla(var, tablita):
+    var = var.lower()
+    var = var.replace(" ", "")
+    if var == tablita:
         return True
     else:
         return False
         
 
 def suma (numero):
-    for i in range (1, 10):
-        print(i+ numero)
+    print ("Tabla del ", numero)
+    for i in range (1, 11):
+        print(numero,"➕",i,"=", numero+i) 
+   
 
-
-def resta (numero, rango):
-    for i in range (numero, rango):
-        print(i- 1)
+def resta (numero):
+    print ("Tabla del ", numero)
+    for i in range (2, 11):
+        print(numero,"➖",i,"=", i-numero) 
 
 
 def multiplicacion (numero):
-    for i in range (1, 11):
-        print(i* numero)
+    print ("Tabla del ", numero)
+    for i in range (1, 11): 
+        print(numero,"✖️",i,"=", numero*i) 
 
 
 def division (numero):
+    print ("Tabla del ", numero)
     for i in range (1, 11):
-        print(i/ numero)
+        print(i,"➗",numero,"=", i/numero) 
 
 
 def operacion (operador):
@@ -38,17 +42,17 @@ def operacion (operador):
 def run():
     welcome = input("""Hola👋, bienvenido a este increible programa donde podras saber:
     
-    1- Tabla de adicion
-    2- Tabla de sustraccion
-    3- Tabla de multiplicacion
-    4- Tabla de la division 
+    1- Tablas de adicion ➕
+    2- Tablas de sustraccion ➖
+    3- Tablas de multiplicacion ✖️
+    4- Tablas de division ➗
     
-    ¿Que tabla necesitas usar? (EJEMPlO: Tabla de adicion) """)
-    es_tabla = nombre_tabla(welcome, "tabladeadicion")
-    if es_tabla == True:
+    ¿Que tabla necesitas usar? (EJEMPlO: Tablas de adicion) """)
+    es_tabla = nombre_tabla(welcome, "tablasdeadicion")
+    if es_tabla == True: 
         es_numero = operacion("adicion")
         if es_numero == 1:
-            suma(1)  
+            suma(1)
         elif es_numero == 2:
             suma(2)
         elif es_numero == 3:
@@ -65,16 +69,35 @@ def run():
             suma(8)
         elif es_numero == 9:
             suma(9)
-            
-            
-    es_tabla = nombre_tabla(welcome, "tabladesustraccion")
+        else:
+            print("Por favor elige un valor correcto 💚")    
+      
+    es_tabla = nombre_tabla(welcome, "tablasdesustraccion")
     if es_tabla == True:
-        es_numero2 = operacion("sustraccion")
-        if es_numero2:
-            resta(1,10)
+        es_numero = operacion("sustraccion")
+        if es_numero == 1:
+            resta(1)
+        elif es_numero == 2:
+            resta(2)
+        elif es_numero == 3:
+            resta(3)
+        elif es_numero == 4:
+            resta(4)
+        elif es_numero == 5:
+            resta(5)
+        elif es_numero == 6:
+            resta(6)
+        elif es_numero == 7:
+            resta(7)
+        elif es_numero == 8:
+            resta(8)
+        elif es_numero == 9:
+            resta(9)
+        else:
+            print("Por favor elige un valor correcto 💚")
 
         
-    es_tabla = nombre_tabla(welcome, "tablademultiplicacion")
+    es_tabla = nombre_tabla(welcome, "tablasdemultiplicacion")
     if es_tabla == True:
         es_numero = operacion("multiplicacion")
         if es_numero == 1:
@@ -95,8 +118,10 @@ def run():
             multiplicacion(8)
         elif es_numero == 9:
             multiplicacion(9)
+        else:
+            print("Por favor elige un valor correcto 💚")
 
-    es_tabla = nombre_tabla(welcome, "tabladedivision")
+    es_tabla = nombre_tabla(welcome, "tablasdedivision")
     if es_tabla == True:
         es_numero = operacion("division")
         if es_numero == 1:
@@ -117,6 +142,10 @@ def run():
             division(8)
         elif es_numero == 9:
             division(9)
+        else:
+            print("Por favor elige un valor correcto 💚")
+    else:
+        print("Por favor elige un valor correcto 💚")
 
 
 if __name__ == '__main__':

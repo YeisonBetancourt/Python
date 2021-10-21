@@ -104,6 +104,7 @@
 
 
 def run ():
+ 
     for tabla in range(0,13,1):
         print('Tabla del',tabla)
         for num in range(13):
