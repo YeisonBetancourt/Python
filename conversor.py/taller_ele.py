@@ -103,12 +103,19 @@
 #             print(contador-1)
 
 
-def run ():
+# def run ():
  
-    for tabla in range(0,13,1):
-        print('Tabla del',tabla)
-        for num in range(13):
-            print(tabla,'x',num,'=',tabla*num)
+#     for tabla in range(0,13,1):
+#         print('Tabla del',tabla)
+#         for num in range(13):
+#             print(tabla,'x',num,'=',tabla*num)
 
-if __name__ == '__main__':
-    run()
+# if __name__ == '__main__':
+#     run()
+
+
+from typing import Mapping, MappingView, MutableMapping
+
+
+def run():
+    pass

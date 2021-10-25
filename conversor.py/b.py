@@ -1,3 +1,9 @@
+
+
+
+
+
+
 def run():
     number = int(input("Escribe un numero: "))
     resultado = str(number*number)

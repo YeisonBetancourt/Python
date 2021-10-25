@@ -6,6 +6,7 @@ def r(respuesta, si_no):
     else:
         return False
 
+
 def ciclo(categoria, nivel, adivinanza, objeto_adivinado ):
     print("-Haz elegido la categoria de " + categoria + " - Que comience el juego! Recuerda que solo tienes 10 oportunidades")
     print(nivel + " nivel: ")
@@ -16,20 +17,7 @@ def ciclo(categoria, nivel, adivinanza, objeto_adivinado ):
             print("Nooooo! te quedo mal, este intento numero " + str(i) + " de 10" )
         elif objeto == objeto_adivinado:
             print("FELICITACIONES, LO HAZ LOGRADO! 😜🤤🥳😇🤪😁")
-            break      
-
-
-# def ciclo(categoria, nivel, adivinanza, objeto_adivinado ):
-#     print("-Haz elegido la categoria de " + categoria + " - Que comience el juego! Recuerda que solo tienes 10 oportunidades")
-#     print(nivel + " nivel: ")
-#     print(adivinanza)
-#     for i in range (1,11):
-#         objeto = input("Escribe: ")
-#         if objeto != objeto_adivinado:
-#             print("Nooooo! te quedo mal, este intento numero " + str(i) + " de 10" )
-#         elif objeto == objeto_adivinado:
-#             print("FELICITACIONES, LO HAZ LOGRADO! 😜🤤🥳😇🤪😁")
-#             break        
+            break        
 
 
 def run():

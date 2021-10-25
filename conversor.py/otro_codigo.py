@@ -86,26 +86,26 @@
 
 
 
-def run():
-    mensaje="Bienvenido al juego de ADIVINA LA LETRA, tienes 10 intentos, BUENA SUERTE AMIGO(A) 😊😈😊"
-    print(mensaje)
-    contador=1 #comenzamos desde 1
-    limite=11 #Hasta el 10
-    while contador<limite:
-        letra=input("Adivina la letra: ")
-        if ((letra!='h') and (letra!='H')): #Comprobamos si es la letra gandora
-            print("No es esa letra, ya vas ", contador,"intentos de 10")
-            #damos a conocer los intentos
-            if contador==10: #Mensaje cuando llegues al límite
-                print("YA PERDISTE!! AJAJAJA 😈🤡😂")
-        else: #En el caso de ser la letra ganadora
-            print("Esa es la letra, GANASTE, pense que no lo lograrías 😒👿😛")
-            break
-        contador += 1
+# def run():
+#     mensaje="Bienvenido al juego de ADIVINA LA LETRA, tienes 10 intentos, BUENA SUERTE AMIGO(A) 😊😈😊"
+#     print(mensaje)
+#     contador=1 #comenzamos desde 1
+#     limite=11 #Hasta el 10
+#     while contador<limite:
+#         letra=input("Adivina la letra: ")
+#         if ((letra!='h') and (letra!='H')): #Comprobamos si es la letra gandora
+#             print("No es esa letra, ya vas ", contador,"intentos de 10")
+#             #damos a conocer los intentos
+#             if contador==10: #Mensaje cuando llegues al límite
+#                 print("YA PERDISTE!! AJAJAJA 😈🤡😂")
+#         else: #En el caso de ser la letra ganadora
+#             print("Esa es la letra, GANASTE, pense que no lo lograrías 😒👿😛")
+#             break
+#         contador += 1
 
 
-if __name__=="__main__":
-    run()
+# if __name__=="__main__":
+#     run()
 
 
 
@@ -115,3 +115,77 @@ if __name__=="__main__":
 #         print("Figaroooo")
 #         break
 #     print("Galileo")
+
+
+
+# def juego(vidas):
+#     num_a = 5
+
+#     num = int(input("Ingresa un numero:"))
+
+#     if num < 0 or num > 10:
+#         vidas -= 1
+#         print("Numero invalido, pierdes una vida.")
+#         return vidas
+#     elif num_a > num:
+#         vidas -= 1
+#         print("El numero ingresado es menor al del sistema, pierdes una vida.")
+#         return vidas
+#     elif(num_a == num):
+#         print("Vaya, es un empate!")
+#     else:
+#         print("Genial, le ganaste al sistema!")
+
+
+# def main():
+#     print("""
+#     El juego consiste en escribir un numero mayor al que genera el sistema en un rango del 1 al 10,
+#     tienes hasta 3 oportunidades de fallar al inicio.
+#     Suerte!""")
+
+#     vidas= 3
+
+#     while(True):
+#         if vidas == 0:
+#             print("Fin del juego.")
+#             break
+
+#         vidas = juego(vidas)
+#         print("Te quedan: " + str(vidas) + " vidas.")
+    
+
+
+
+
+
+
+# if __name__ == "__main__":
+#     main()
+
+
+
+def primo(numero):
+    contador = 0
+
+    for i in range(1, numero + 1):
+        if i == 1 or i == numero:
+            continue
+        if numero % i == 0:
+            contador = contador + 1
+    if contador == 0:
+        return True
+    else:
+        return False
+
+
+def run():
+    print("COMPRUEBA SI UN NUMERO ES PRIMO\n")
+    numero = int(input('Ingrese un número: '))
+    if primo(numero):
+        print('Es primo')
+    else:
+        print('No es primo')
+
+
+if __name__ == '__main__':
+    run()
