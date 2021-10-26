@@ -19,10 +19,7 @@ def ciclo(vidas, nivel):
     for i in range(1, vidas):
         if numero_elegido == numero_aleatorio:
             print("Haz ganado!!! 🤪🤪🤪")
-            if numero_elegido == numero_aleatorio:
-                salir()
-            else:
-                input("Deseas continuar con el nivel numero " + str(nivel) + "(si/no) ")
+            input("Deseas continuar con el nivel numero " + str(nivel) + "(si/no) ")
         elif numero_elegido < numero_aleatorio:
             print("Busca un numero mas grande... Este es tu intento numero " + str(i) + " de " + str(vidas))
         else:
